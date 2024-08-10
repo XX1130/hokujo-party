@@ -1,3 +1,4 @@
+
 h1{
     margin-left:30px;
     margin-right:1000px;
@@ -6,14 +7,24 @@ h1{
     -webkit-background-clip: text;
 }
 
-h2{
+.element{
     margin-left:80px;
     color:rgb(200,100,255);
 }
-p{
+.link{
     margin-left:110px;
 }
 
-body{
+.left{
+    float:left;
     margin: 20px 0px 40px 40px;
+}
+
+.right{
+    float:right;
+    margin: -675px 250px 0px 0px;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(255,255,255), rgb(205,200,255));
 }

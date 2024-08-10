@@ -9,22 +9,41 @@
             p.link{margin-top:-20px;}
         </style>
     </head>
-</html>
 
 <body>
-    <h1>Basic_Strategy</h1>
-    <h2>1, charas_impression</h2>
-    <p class="link" id="link_charaimpression"><a href="./charas_impression/chara_index.html">チャンピオン一覧</a></p>
-    <h2>2, items_impression</h2>
-    <p class="link" id="link_items_impression"><a href="./items_impression/items_impression.html">アイテム評価</a></p>
-    <h2>3, lane_composition</h2>
-    <p class="link" id="link_lane_composition"><a href="./lane_composition/lane_composition.html">ロール構成</a></p>
-    <h2>4, 序盤戦術</h2>
-    <p class="link" id="link_early_strategy"><a href="./early_strategy/earyl_strategy.html">序盤戦術</a></p>
-    <h2>5, 中盤戦術</h2>
-    <p class="link" id="link_middle_strategy"><a href="./middle_strategy/middle_strategy.html">中盤戦術</a></p>
-    <h2>6, 終盤戦術</h2>
-    <p class="link" id="link_final_strategy"><a href="./final_strategy/final_strategy.html">終盤戦術</a></p>
-    <h2>7, その他いろいろ</h2>
-    <p class="link" id="link_others"><a href="./others/others.html">その他いろいろ</a></p>
+    <div class="left">
+        <h1>Basic_Strategy</h1>
+        <h2 class="element">1, charas_impression</h2>
+        <p class="link" id="link_charaimpression"><a href="./charas_impression/chara_index.html">チャンピオン一覧</a></p>
+        <h2 class="element">2, items_impression</h2>
+        <p class="link" id="link_items_impression"><a href="./items_impression/items_impression.html">アイテム評価</a></p>
+        <h2 class="element">3, lane_composition</h2>
+        <p class="link" id="link_lane_composition"><a href="./lane_composition/lane_composition.html">ロール構成</a></p>
+        <h2 class="element">4, 序盤戦術</h2>
+        <p class="link" id="link_early_strategy"><a href="./early_strategy/earyl_strategy.html">序盤戦術</a></p>
+        <h2 class="element">5, 中盤戦術</h2>
+        <p class="link" id="link_middle_strategy"><a href="./middle_strategy/middle_strategy.html">中盤戦術</a></p>
+        <h2 class="element">6, 終盤戦術</h2>
+        <p class="link" id="link_final_strategy"><a href="./final_strategy/final_strategy.html">終盤戦術</a></p>
+        <h2 class="element">7, その他いろいろ</h2>
+        <p class="link" id="link_others"><a href="./others/others.html">その他いろいろ</a></p>
+    </div>
+    <div class="right">
+        <h3 class="memo">note</h3>
+        <form action="#" id="form">
+            <input type="text" name="memo">
+            <input type="submit" value="chat">
+        </form>
+    </div>
 </body>
+
+<script>
+    document.getElementById('form').onsubmit = function(event)
+    {
+        event.preventDefault();
+        let inputForm = document.getElementById('form').memo.value;
+        document.getElementById('output').textContent=`${inputForm}`;
+    }
+
+</script>
+</html>
